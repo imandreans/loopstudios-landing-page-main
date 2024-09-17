@@ -26,43 +26,27 @@ h1 {
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
+  aspect-ratio: 600/271;
   padding: 65px 165px;
   width: 100%;
   margin-bottom: 180px;
 }
+#hero nav {
+  margin-bottom: 120px;
+}
 #hero nav ul {
-  position: relative;
   display: flex;
   justify-content: flex-end;
+  color: white;
   align-items: center;
   gap: 32px;
   list-style-type: none;
 }
-#hero nav ul a {
-  color: white;
-  text-decoration: none;
-}
-#hero nav ul .nav-link {
-  color: white;
-  text-decoration: none;
-  padding: 5px 0;
-  position: relative;
-}
-#hero nav ul .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 30%;
-  width: 33%;
-  height: 2px;
-  background-color: white;
-  display: none;
-}
-#hero nav ul .nav-link.active::after {
-  display: block;
-}
 #hero nav ul li:not(:first-child) {
   cursor: pointer;
+}
+#hero nav ul li:not(:first-child):hover {
+  border-bottom: 1px solid white;
 }
 #hero nav ul li:first-child {
   margin-right: auto;
@@ -108,7 +92,7 @@ h1 {
   color: white;
   width: 700px;
   padding: 38px;
-  margin: 80px 0;
+  margin-bottom: 80px;
 }
 
 #about {
@@ -150,7 +134,8 @@ h1 {
   font-family: "Josefin Sans";
   font-weight: 300;
   font-size: 3em;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  margin: 0;
 }
 #content button {
   justify-self: flex-end;
@@ -259,9 +244,6 @@ footer ul {
   display: flex;
   gap: 30px;
 }
-footer ul li {
-  cursor: pointer;
-}
 footer .contacts,
 footer p {
   display: flex;
@@ -270,9 +252,6 @@ footer p {
 }
 footer .contacts {
   gap: 30px;
-}
-footer .contacts img {
-  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -416,4 +395,4 @@ footer .contacts img {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

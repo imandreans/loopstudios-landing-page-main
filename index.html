@@ -20,13 +20,51 @@
     <section id="hero">
       <div class="container">
         <nav>
-          <img src="images\logo.svg" alt="" />
+          <ul class="sidebar">
+            <li>
+              <img id="logo" src="images\logo.svg" alt="" />
+              <img id="close-menu" src="images\icon-close.svg" alt="" />
+            </li>
+            <li>
+              <a href="#" class="nav-link"> About </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"> Careers </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"> Events </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"> Products </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"> Support </a>
+            </li>
+          </ul>
           <ul>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
+            <li>
+              <img src="images\logo.svg" alt="" />
+            </li>
+            <li class="hideOnMobile">
+              <a href="#" class="nav-link"> About </a>
+            </li>
+
+            <li class="hideOnMobile">
+              <a href="#" class="nav-link"> Careers </a>
+            </li>
+
+            <li class="hideOnMobile">
+              <a href="#" class="nav-link"> Events </a>
+            </li>
+            <li class="hideOnMobile">
+              <a href="#" class="nav-link"> Products </a>
+            </li>
+            <li class="hideOnMobile">
+              <a href="#" class="nav-link"> Support </a>
+            </li>
+            <li onClick="showSidebar()">
+              <img id="menu" src="images\icon-hamburger.svg" alt="" />
+            </li>
           </ul>
         </nav>
         <h1 id="hero-title">Immersive experiences that deliver</h1>
@@ -49,42 +87,33 @@
 
     <section id="content">
       <div class="container">
-        <header>
-          <h1>Our creations</h1>
+        <h1>Our creations</h1>
 
-          <button>See all</button>
-        </header>
-        <div class="creations">
-          <div class="creation">
-            <img src="images\desktop\image-deep-earth.jpg" alt="" />
+        <button>See all</button>
+
+        <div class="products">
+          <div id="deep-earth" class="product">
             <h1>Deep earth</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-night-arcade.jpg" alt="" />
+          <div id="night-arcade" class="product">
             <h1>Night arcade</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-soccer-team.jpg" alt="" />
+          <div id="soccer-team" class="product">
             <h1>Soccer team VR</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-grid.jpg" alt="" />
+          <div id="grid" class="product">
             <h1>The grid</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-from-above.jpg" alt="" />
+          <div id="from-above" class="product">
             <h1>From up above VR</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-pocket-borealis.jpg" alt="" />
+          <div id="pocket-borealis" class="product">
             <h1>Pocket borealis</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-curiosity.jpg" alt="" />
+          <div id="curiosity" class="product">
             <h1>The curiosity</h1>
           </div>
-          <div class="creation">
-            <img src="images\desktop\image-fisheye.jpg" alt="" />
+          <div id="fisheye" class="product">
             <h1>Make it fisheye</h1>
           </div>
         </div>
@@ -110,11 +139,6 @@
       </div>
     </footer>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-      >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <script src="script.js"></script>
   </body>
 </html>
